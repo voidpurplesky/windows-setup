@@ -8,6 +8,13 @@
 
 lg gram - windows 11 home
 
+#### 에디터 선택
+##### (JS계열) vscode 다운로드/설치
+###### 참고
+https://code.visualstudio.com/docs
+
+commant : 약간 자바스프링쪽보단 자바스크립트, nodejs, python(얘는 파이참이 더??) 등등 프론트쪽 느낌
+
 ###### 1. 터미널 상태확인
 - Windows PowerShell (기본)
 리눅스 명령어인 ls 명령어가 됨?! 
@@ -37,3 +44,9 @@ ls 안됨
   SUSE-Linux-Enterprise-15-SP6    SUSE Linux Enterprise 15 SP6
   openSUSE-Tumbleweed             openSUSE Tumbleweed
 ```
+
+commant : 딱히 wsl 설치 이유를 모르겠어서 보류중
+
+##### 참고
+https://nomadcoders.co/windows-setup-for-developers
+https://code.visualstudio.com/docs
