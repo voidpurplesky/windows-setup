@@ -42,7 +42,20 @@ Chocolatey installed 1/1 packages.
 System.UnauthorizedAccessException: 'C:\ProgramData\chocolatey\.chocolatey' 경로에 대한 액세스가 거부되었습니다.
 ```
 
-
+자바설치확인
+- 터미널 재실행한다.
+- `java` 쳤을때 자바헬프 나오면 성공, java란 명령어가 없다는 내용의 에러가 나오면 실패
+자바설치성공시
+```
+PS C:\Users\purpl> java
+사용법: java [옵션] <기본 클래스> [args...]
+           (클래스 실행)
+   또는  java [옵션] -jar <jar 파일> [args...]
+           (jar 파일 실행)
+   또는  java [옵션] -m <모듈>[/<기본 클래스>] [args...]
+       java [옵션] --module <모듈>[/<기본 클래스>] [args...]
+           (모듈의 기본 클래스 실행)
+```
 설치위치는
 C:\Program Files\Amazon Corretto\jdk21.0.4_7
 
