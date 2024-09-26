@@ -62,5 +62,12 @@ C:\Program Files\Amazon Corretto\jdk21.0.4_7
 commant : 폴더명이 java로 시작을 안해서 한참 찾았다. 초코라떼말고 그냥 윈도우로 깔걸하고 후회했음
 
 시스템 변수 새로 만들기
+고급 시스템 설정 - 환경 변수 - 시스템 변수 - 새로 만들기
 JAVA_HOME  C:\Program Files\Amazon Corretto\jdk21.0.4_7
+(초코라뗴 이용시 생략가능)
+- 시스템 변수 - PATH 편집 - 새로 만들기 %JAVA_HOME%\bin
+초코라떼로 자바 설치시 C:\Program Files\Amazon Corretto\jdk21.0.4_7\bin 가 이미 들어가있다.
+commant : 그럼 자바변수 설정자체가 아예 필요없는건가
+
+
 
