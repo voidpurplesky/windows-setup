@@ -86,6 +86,12 @@ WARNING: It's very likely you will need to close and reopen your shell
 ```
 파워쉘 재시작하라하네
 
+초코라떼 설치 확인
+```
+PS C:\Users\purpl> choco
+Chocolatey v2.3.0
+Please run 'choco -?' or 'choco <command> -?' for help menu.
+```
 
 ###### 1. 터미널 상태확인
 - Windows PowerShell (기본)
