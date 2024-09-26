@@ -94,9 +94,11 @@ Please run 'choco -?' or 'choco <command> -?' for help menu.
 #### 초코라떼홈에서 패키지 검색 후 설치
 https://community.chocolatey.org/packages
 - jdk
+여말고 java 설치에 설명 이어감
+- git : chocolatey로 설치하면 마우스 오른쪽 메뉴에 추가가 안되는게 불편해서 윈도우로 받기로
+추가 : 앗 윈도우로 깔아도 윈11은 마우스 오른쪽 안되는구나...ㅜ
 
 
-#### git
 ```
 choco install git.install
 ```
@@ -147,6 +149,8 @@ Environment Vars (like PATH) have changed. Close/reopen your shell to
 Chocolatey installed 3/3 packages.
  See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
 ```
+#### git
+https://git-scm.com/downloads/win
 
 ###### 1. 터미널 상태확인
 - Windows PowerShell (기본)
