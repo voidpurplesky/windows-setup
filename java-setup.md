@@ -41,3 +41,13 @@ Chocolatey installed 1/1 packages.
 ```
 System.UnauthorizedAccessException: 'C:\ProgramData\chocolatey\.chocolatey' 경로에 대한 액세스가 거부되었습니다.
 ```
+
+
+설치위치는
+C:\Program Files\Amazon Corretto\jdk21.0.4_7
+
+commant : 폴더명이 java로 시작을 안해서 한참 찾았다. 초코라떼말고 그냥 윈도우로 깔걸하고 후회했음
+
+시스템 변수 새로 만들기
+JAVA_HOME  C:\Program Files\Amazon Corretto\jdk21.0.4_7
+
