@@ -15,6 +15,36 @@ https://code.visualstudio.com/docs
 
 commant : 약간 자바스프링쪽보단 자바스크립트, nodejs, python(얘는 파이참이 더??) 등등 프론트쪽 느낌
 
+Chocolatey
+https://chocolatey.org/install
+
+Requirements: 
+
+- .NET Framework 4.8 : 윈도우업데이트 완료니까 되있다고 생각하고 패스하려다 확인
+
+참고 : https://learn.microsoft.com/ko-kr/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed
+
+##### .NET Framework 4.8 설치 확인방법
+- PowerShell을 사용하여 최소 버전 확인
+- 설치된 경우 True 코드 반환, 설치되지 않은 경우 False 코드 반환.
+###### PowerShell
+```
+(Get-ItemPropertyValue -LiteralPath 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name Release) -ge 528040
+```
+
+##### Install Chocolatey for Individual Use:
+```
+([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).isInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+```
+터미널 관리자 권한으로 실행하기 관리자:Windows PowerShell로 
+
+
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+
+
 ###### 1. 터미널 상태확인
 - Windows PowerShell (기본)
 리눅스 명령어인 ls 명령어가 됨?! 
