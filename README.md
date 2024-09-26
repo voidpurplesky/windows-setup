@@ -1,24 +1,23 @@
 # windows-setup
 개발자를 위한 윈도우 셋업 Windows Setup for Developers
 
-테스트pc
-- lg gram : windows 11 home
+## 테스트pc
+lg gram : windows 11 home
+### other 보유pcs
 - asus : windows 10 home
 - etc
 
-lg gram - windows 11 home
-
-#### 에디터 선택
-##### (JS계열) vscode 다운로드/설치
-###### 참고
+### 에디터 선택
+#### (JS계열) vscode 다운로드/설치
+##### 참고
 https://code.visualstudio.com/docs
 
 commant : 약간 자바스프링쪽보단 자바스크립트, nodejs, python(얘는 파이참이 더??) 등등 프론트쪽 느낌
 
-Chocolatey
+## Chocolatey
 https://chocolatey.org/install
 
-Requirements: 
+### Requirements: (거진패스)
 
 - .NET Framework 4.8 : 윈도우업데이트 완료니까 되있다고 생각하고 패스하려다 확인
 
@@ -32,7 +31,7 @@ Requirements:
 (Get-ItemPropertyValue -LiteralPath 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name Release) -ge 528040
 ```
 
-##### Install Chocolatey for Individual Use:
+#### Install Chocolatey for Individual Use:
 ```
 ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).isInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 ```
@@ -91,6 +90,62 @@ WARNING: It's very likely you will need to close and reopen your shell
 PS C:\Users\purpl> choco
 Chocolatey v2.3.0
 Please run 'choco -?' or 'choco <command> -?' for help menu.
+```
+#### 초코라떼홈에서 패키지 검색 후 설치
+https://community.chocolatey.org/packages
+- jdk
+
+
+#### git
+```
+choco install git.install
+```
+git 설치로그전체
+```
+PS C:\Users\purpl> choco install git.install
+Chocolatey v2.3.0
+Installing the following packages:
+git.install
+By installing, you accept licenses for the packages.
+Downloading package from source 'https://community.chocolatey.org/api/v2/'
+Progress: Downloading chocolatey-compatibility.extension 1.0.0... 100%
+
+chocolatey-compatibility.extension v1.0.0 [Approved]
+chocolatey-compatibility.extension package files install completed. Performing other installation steps.
+ Installed/updated chocolatey-compatibility extensions.
+ The install of chocolatey-compatibility.extension was successful.
+  Deployed to 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility'
+Downloading package from source 'https://community.chocolatey.org/api/v2/'
+Progress: Downloading chocolatey-core.extension 1.4.0... 100%
+
+chocolatey-core.extension v1.4.0 [Approved]
+chocolatey-core.extension package files install completed. Performing other installation steps.
+ Installed/updated chocolatey-core extensions.
+ The install of chocolatey-core.extension was successful.
+  Deployed to 'C:\ProgramData\chocolatey\extensions\chocolatey-core'
+Downloading package from source 'https://community.chocolatey.org/api/v2/'
+Progress: Downloading git.install 2.46.2... 100%
+
+git.install v2.46.2 [Approved]
+git.install package files install completed. Performing other installation steps.
+The package git.install wants to run 'chocolateyInstall.ps1'.
+Note: If you don't run this script, the installation will fail.
+Note: To confirm automatically next time, use '-y' or consider:
+choco feature enable -n allowGlobalConfirmation
+Do you want to run the script?([Y]es/[A]ll - yes to all/[N]o/[P]rint): a
+
+Using Git LFS
+Installing 64-bit git.install...
+git.install has been installed.
+git.install installed to 'C:\Program Files\Git'
+  git.install can be automatically uninstalled.
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+ see the changes (or in powershell/cmd.exe just type `refreshenv`).
+ The install of git.install was successful.
+  Deployed to 'C:\Program Files\Git\'
+
+Chocolatey installed 3/3 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
 ```
 
 ###### 1. 터미널 상태확인
